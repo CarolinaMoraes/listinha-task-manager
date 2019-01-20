@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Listinha.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+    <script src="js/main.js" defer></script>
+    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div id="left-side">
+                <img src="media/done.png" alt="a woman doing an YEah!">
+                <section id="title-add">
+                    <h1>Listinha.js</h1>
+                    <p>Adicione suas tarefas:</p>
+
+                    <small id="emptyTask"></small>
+                    <input type="text" id="tarefaTxt">
+                    <button id="add">Adicionar</button>
+
+
+                </section>
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="right-side">
+                <h1 id="tasks-size"></h1>
+
+                <div id="list">
+                    <ul id="lista">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+            new PerfectScrollbar('#list');
+    </script>
+</body>
+
+</html>

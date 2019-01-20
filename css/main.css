@@ -1,0 +1,206 @@
+/* Global */
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+main{
+    font-family: 'Montserrat';
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.task p {
+    margin-left: 5%;
+}
+
+.completed p{
+    text-decoration-line: line-through;
+}
+
+.completed{
+    background: #86ad9a !important;
+}
+
+#emptyTask{
+    color: #e86462;
+    font-weight: 400;
+}
+
+.task{
+    position: relative;
+}
+
+li input[type=checkbox]{
+    position: absolute;
+  top: 25px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.close{
+    border: none;
+    float: right;
+    background: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 800px){
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    /* specifics */
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    #left-side img{
+        width: 350px;
+    }
+
+    #left-side {
+        text-align: left;
+        margin-right: 5%;
+        flex: 1;
+    }
+
+    #left-side h1, #left-side p{
+        margin: 0;
+    }
+
+    .divider{
+        border: solid #c4b4b4 0.1px;
+        height: 90vh;
+        margin: 20px;
+    }
+
+    #right-side{
+        flex: 2;
+    }
+
+    input[type=text]{
+        margin: 0;
+        width: 350px;
+        height: 35px;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    #add{
+        font-weight: 300; 
+        font-size: 1rem;
+        text-align: center;
+        background: #e86462;
+        color: white;
+        border: none;
+        height: 35px;
+        margin-top: 15px;
+        width: 150px;
+        border-radius: 3px;
+    }
+
+    #list{
+        width: auto;
+        height: 400px;
+        overflow: auto;
+        margin: auto;
+        position: relative;
+    }
+
+    .task{
+        margin: auto;
+        background: #f4bb19;
+        border-radius: 3px;
+    }
+
+    input[type=checkbox], .task p{
+        display: inline-block;
+    }
+}
+
+
+
+@media(max-width: 800px){
+    /* specifics */
+#left-side img{
+    width: 350px;
+}
+
+#left-side, #right-side{
+    text-align: center;
+}
+
+#left-side h1, #left-side p{
+    margin: 0;
+}
+
+.divider{
+     display: none;
+    }
+
+input[type=text]{
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+#add{
+    font-weight: 300; 
+    font-size: 1rem;
+    text-align: center;
+    background: #e86462;
+    color: white;
+    border: none;
+    height: 35px;
+    margin-top: 15px;
+    width: 35%;
+    border-radius: 3px;
+}
+
+.task{
+    margin: auto;
+    width: 80%;
+    background: #f4bb19;
+    border-radius: 3px;
+}
+
+input[type=checkbox], .task p{
+    display: inline-block;
+}
+}
