@@ -87,6 +87,7 @@ li input[type=checkbox]{
 
     #left-side img{
         width: 350px;
+        padding-top: 5vw;
     }
 
     #left-side {
